@@ -1,0 +1,41 @@
+DATA QUALITY REPORT
+===================
+
+SUMMARY
+-------
+Total records: 4
+Valid records: 0
+Invalid records: 4
+Total individual violations: 6
+
+COMPLETENESS (per field, % non-empty)
+-------------------------------------
+- id: 75.0%
+- title: 75.0%
+- content: 100.0%
+- price: 75.0%
+- currency: 75.0%
+- url: 100.0%
+- scraped_at: 75.0%
+
+COMMON VALIDATION FAILURES
+--------------------------
+- content / too_short: 4 occurrences
+- title / missing_required: 1 occurrences
+- url / invalid_format: 1 occurrences
+
+DETAILS (per record)
+---------------------
+Record 1 (id=123)
+  - [content] too_short: Content must be at least 30 characters long.
+
+Record 2 (id=456)
+  - [title] missing_required: Required field 'title' is missing or empty.
+  - [content] too_short: Content must be at least 30 characters long.
+  - [url] invalid_format: URL should start with http:// or https://.
+
+Record 3 (id=xyz-789)
+  - [content] too_short: Content must be at least 30 characters long.
+
+Record 4 (id=# 4)
+  - [content] too_short: Content must be at least 30 characters long.

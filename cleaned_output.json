@@ -1,0 +1,38 @@
+[
+  {
+    "id": "123",
+    "title": "Awesome Product",
+    "content": "First line. Second line.",
+    "price": 10.5,
+    "currency": "USD",
+    "url": "https://example.com/products/123",
+    "scraped_at": "2026-02-01"
+  },
+  {
+    "id": "456",
+    "title": "",
+    "content": "Cheap item",
+    "price": -5.0,
+    "currency": null,
+    "url": "example.com/item/456",
+    "scraped_at": "2026-02-01"
+  },
+  {
+    "id": "xyz-789",
+    "title": "Third item",
+    "content": "Contains HTML tags",
+    "price": 20.0,
+    "currency": "EUR",
+    "url": "http://example.net/items/xyz-789",
+    "scraped_at": "2026-02-15"
+  },
+  {
+    "id": null,
+    "title": "Broken price",
+    "content": "This has a non-numeric price.",
+    "price": null,
+    "currency": "USD",
+    "url": "https://example.org/broken",
+    "scraped_at": null
+  }
+]
